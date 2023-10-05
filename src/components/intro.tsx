@@ -31,7 +31,7 @@ export default function intro() {
             />
           </motion.div>
         </div>
-        <motion.p
+        <motion.h1
           className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function intro() {
           Hi, I am Xu. <br /> I&rsquo;m a software developer with a passion for
           creating responsive and user-friendly web applications. <br />
           Dive in to see some of the projects I&rsquo;m most proud of.
-        </motion.p>
+        </motion.h1>
       </div>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
