@@ -41,6 +41,8 @@ export const projectsConfig = [
       "OpenAI Article Summarizer is front-end project powered by OpenAI GPT-4 to summarize articles. ",
     image: summarizer,
     skills: ["Typescript", "React", "Redux", "Vite", "TailwindCSS"],
+    demoUrl: "https://superlative-fudge-8d14e1.netlify.app",
+    codeUrl: "https://github.com/i-am-xu-wang/ai_summarizer",
   },
   {
     title: "Urban Advisor",
@@ -48,5 +50,7 @@ export const projectsConfig = [
       "Urban Advisor is an advanced full-stack application designed to offer users insights into the quality of living in various areas, tailored to their specific household needs.",
     image: urbanAdvisor,
     skills: ["Django", "Python", "JQuery", "Ajax", "Chart.js", "SQLite"],
+    demoUrl: "https://urban-advisor.herokuapp.com",
+    codeUrl: "https://github.com/i-am-xu-wang/urban_advisor",
   },
 ];
