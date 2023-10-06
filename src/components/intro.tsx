@@ -8,9 +8,12 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
-export default function intro() {
+export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="relative">
           <motion.div

@@ -3,9 +3,9 @@ import SectionHeading from "./sectionHeading";
 import { projectsConfig } from "../lib/data";
 import Project from "./project";
 
-export default function projects() {
+export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsConfig.map((project) => (
