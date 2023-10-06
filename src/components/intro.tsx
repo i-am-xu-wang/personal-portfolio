@@ -24,10 +24,8 @@ export default function intro() {
             <Image
               src={profile}
               alt="profile"
-              width="200"
-              height="200"
               quality="100"
-              className="h-30 w-30 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-30 w-30 rounded-full object-cover border-[0.35rem] w-[10rem] h-[10rem] border-white shadow-xl"
             />
           </motion.div>
         </div>
