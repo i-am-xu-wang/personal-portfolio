@@ -7,11 +7,15 @@ import resume from "../assets/icon-resume.png";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hook";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home");
+
   return (
     <section
       id="home"
+      ref={ref}
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex flex-col items-center justify-center">

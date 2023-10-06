@@ -4,24 +4,10 @@ import React, { useEffect } from "react";
 import { aboutMe } from "../lib/data";
 import SectionHeading from "./sectionHeading";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/app/context/active-section-context";
-import { time } from "console";
 import { useSectionInView } from "@/lib/hook";
 
-export default function about() {
-  //const { ref } = useSectionInView("About");
-
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("About");
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+export default function About() {
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
