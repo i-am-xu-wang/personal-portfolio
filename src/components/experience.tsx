@@ -10,11 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 import { experienceConfig } from "@/lib/data";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
+import { useSectionInView } from "@/lib/hook";
 
 export default function Experience() {
-  const { ref, inView } = useInView({
-    threshold: 0.25,
-  });
+  const { ref, inView } = useSectionInView("Experience", 0.2);
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
