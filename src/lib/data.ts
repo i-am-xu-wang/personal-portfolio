@@ -1,5 +1,8 @@
 import urbanAdvisor from "../assets/urban_advisor.png";
 import summarizer from "../assets/ai_summarizer.png";
+import React from "react";
+import { BsPersonWorkspace } from "react-icons/bs";
+import { GiGraduateCap } from "react-icons/gi";
 
 export const links = [
   {
@@ -81,3 +84,33 @@ export const skillsConfig = [
   "Mockito",
   "Git",
 ];
+
+export const experienceConfig = [
+  {
+    title: "Software Engineer",
+    company: "Dyson",
+    location: "Shanghai, China",
+    description:
+      "I worked with a team of 10 engineers to develop the MyDyson Application. I was responsible for the development of the product user manual and instant control features.",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "2022",
+  },
+  {
+    title: "Masters student in Computer Science",
+    company: "Virginia Tech",
+    location: "Falls Church, VA",
+    description:
+      "My study in Virginia Tech was profound and successful (4.0 GPA hooray!). My concentration of study focuses on software engineering. I took courses in web development, data structure and algorithm, software testing and software design.",
+    icon: React.createElement(GiGraduateCap),
+    date: "2020",
+  },
+  {
+    title: "Part-time student in Computer Science",
+    company: "Northern Virginia Community College",
+    location: "Sterling, VA",
+    description:
+      "While working in the local accounting firm, I took classes in the evening to learn the basics of computer science.",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "2019",
+  },
+] as const;
