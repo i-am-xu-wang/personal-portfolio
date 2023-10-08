@@ -5,6 +5,7 @@ import SectionHeading from "./sectionHeading";
 import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hook";
 import { sendEmail } from "@/app/actions/actions";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -19,14 +20,21 @@ export default function Contact() {
       <p className="text-gray-700 -mt-3">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:xwang9092@gmail.com">
-          xwang9092@gmail.come
+          xwang9092@gmail.com
         </a>{" "}
         or through this form
       </p>
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
         }}
       >
         <input
@@ -40,7 +48,7 @@ export default function Contact() {
         <textarea
           name="message"
           required
-          maxLength={500}
+          maxLength={5000}
           className="h-52 my-3 rounded-lg borderBlack p-4"
           placeholder="Your Address"
         />
