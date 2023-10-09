@@ -37,7 +37,7 @@ export default function Experience() {
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid  #9ca3af",
+                borderRight: "0.4rem solid rgba(0,0,0,0.1)",
               }}
               date={experience.date}
               icon={experience.icon}
