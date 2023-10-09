@@ -31,11 +31,12 @@ export const links = [
   },
 ] as const;
 
-export const aboutMe = {
-  p1: "After a few years in public accounting, I chose to follow my passion for software engineering. I earned my Master's in Computer Science from Virginia Tech, achieving a perfect GPA. Post-graduation, I joined Dyson as a software engineer and worked on developing the MyDyson Application. I'm drawn to coding primarily because of the satisfaction I get from leveraging my technical expertise to address real-world challenges.",
-  p2: "Web development is my main focus, with a strong proficiency in Next.js and React. I've also expanded my skills into full-stack development. Beyond JavaScript, I code confidently in Java,Python and SQL query. ",
-  p3: "Outside the coding sphere, I enjoy playing videos games(big PUBG and League of Legends ARAM player), making latte art and occasionally swimming.",
-} as const;
+export const aboutMe = [
+  "Once upon a tech-time, I traded spreadsheets for code sheets, swapping the world of public accounting for the magical world of software engineering. 🧙‍♂️✨With a Master's from Virginia Tech (and a sparkly 4.0 GPA to boot), I joined Dyson as a software engineer.",
+  "What lights up my keyboard? Web development! Particularly when it involves Next.js and React. They're like the peanut butter and jelly of my code sandwich. But I'm not just about the frontend life. I've ventured into the enchanted forests of full-stack too. Whether it's the rhythmic flow of JavaScript, the ancient runes of Java, the pythonic spells of Python, or the commanding chants of SQL, I've got a trick up my sleeve. ",
+  "When I'm not weaving digital tapestries, you can find me in the gaming arena, battling it out in PUBG or chilling in the lanes of LoL's ARAM. And for those quieter moments? Crafting latte masterpieces ☕️ or making a splash in the pool. ",
+  "Looking to mix some fun with function? Let's make coding magic together!",
+] as const;
 
 export const projectsConfig = [
   {
@@ -91,7 +92,7 @@ export const experienceConfig = [
     company: "Dyson",
     location: "Shanghai, China",
     description:
-      "I worked with a team of 10 engineers to develop the MyDyson Application. I was responsible for the development of the product user manual and instant control features.",
+      "I worked with a team of 10 engineers to develop the MyDyson Application. I primarily worked on developing product user manual and instant control features.",
     icon: React.createElement(BsPersonWorkspace),
     date: "2022",
   },

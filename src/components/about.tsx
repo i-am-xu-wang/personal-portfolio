@@ -18,17 +18,14 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>Hi there 👋</SectionHeading>
       <div className="mb-3">
-        <p className="font-medium mb-8">
-          {aboutMe.p1}
-          <br />
-        </p>
-        <p className="font-medium mb-8">
-          {aboutMe.p2}
-          <br />
-        </p>
-        <span className="font-medium">{aboutMe.p3}</span>
+        {aboutMe.map((paragraph, index) => (
+          <p key={index} className="font-medium mb-4">
+            {paragraph}
+            <br />
+          </p>
+        ))}
       </div>
     </motion.section>
   );
