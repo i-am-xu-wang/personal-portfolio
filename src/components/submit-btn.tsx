@@ -14,7 +14,10 @@ export default function SubmitButton() {
       {pending ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2"></div>
       ) : (
-        <FaPaperPlane className="text-s opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 " />
+        <>
+          Submit{" "}
+          <FaPaperPlane className="text-s opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 " />
+        </>
       )}
     </button>
   );
