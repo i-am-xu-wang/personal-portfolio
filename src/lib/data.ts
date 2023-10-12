@@ -33,8 +33,8 @@ export const links = [
 
 export const aboutMe = [
   "Once upon a tech-time, I traded spreadsheets for code sheets, swapping the world of public accounting for the magical world of software engineering. 🧙‍♂️✨With a Master's from Virginia Tech, I joined Dyson as a software engineer.",
-  "What lights up my keyboard? Web development! Particularly when it involves Next.js and React. They're like the peanut butter and jelly of my code sandwich. But I'm not just about the frontend life. I've ventured into the enchanted forests of full-stack too. Whether it's the rhythmic flow of JavaScript, the ancient runes of Java, the pythonic spells of Python, or the commanding chants of SQL, I've got a trick up my sleeve. ",
-  "When I'm not weaving digital tapestries, you can find me in the gaming arena, battling it out in PUBG or chilling in the lanes of LoL's ARAM. And for those quieter moments? Crafting latte masterpieces ☕️ or making a splash in the pool. ",
+  "What lights up my keyboard? Web development! Particularly when coding in Typescript. Having types really gives me a sense of security (saying it as a Java coder). Oh, and by the way, I'm pretty nifty with Python and SQL too!",
+  "When I'm not coding, you can find me in the PUBG or League of Legends battlefield, or in the kitchen baking up a storm.",
   "Looking to mix some fun with function? Let's make coding magic together!",
 ] as const;
 

@@ -56,7 +56,7 @@ export default function Intro() {
       >
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://drive.google.com/file/d/1muAgcQKtp09Q5TiS2cBRiX_QIuQm4l15/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1_AgSTVipFb5TWMzG0u8fTIsszGZBFOcx/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
         >
